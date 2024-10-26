@@ -6,3 +6,20 @@
   font-family: "FixelVariable";
   src: url("./assets/fonts/FixelVariable.ttf");
 }
+
+@font-face {
+  font-family: "FixelBold";
+  src: url("./assets/fonts/FixelDisplay-Bold.otf");
+}
+@font-face {
+  font-family: "FixelRegular";
+  src: url("./assets/fonts/FixelDisplay-Regular.otf");
+}
+@font-face {
+  font-family: "FixelLight";
+  src: url("./assets/fonts/FixelDisplay-Light.otf");
+}
+@font-face {
+  font-family: "FixelSemiBold";
+  src: url("./assets/fonts/FixelDisplay-SemiBold.otf");
+}
