@@ -2,7 +2,12 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      // fontFamily: {
+        // customFont: ['"FixelVariable"', "sans-serif"],
+        // Add more custom font families as needed
+      // },
+    },
   },
   plugins: [],
 }
