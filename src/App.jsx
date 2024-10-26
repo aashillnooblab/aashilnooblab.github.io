@@ -3,11 +3,13 @@ import HomePage from "./pages/HomePage";
 import Downloads from "./pages/Downloads";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <>
+    <div className=" h-screen">
       <BrowserRouter>
+      <Navbar/>
         <Routes>
           <Route index element={<HomePage/>} />
           <Route path="/downloads" element={<Downloads/>} />
@@ -15,7 +17,7 @@ function App() {
           <Route path="*" element={<NotFound/>} />
         </Routes>
       </BrowserRouter>
-    </>
+    </div>
   );
 }
 
