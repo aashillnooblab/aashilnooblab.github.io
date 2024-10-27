@@ -5,7 +5,7 @@ import telelogo from '../../assets/telelogo.svg'
 
 const Navbar = () => {
   return (
-    <div className='font-[FixelVariable] font-light py-6 mt-7 w-[90%] mx-auto rounded-full px-16 text-white bg-black shadow-custom-opacity backdrop-filter backdrop-blur-lg bg-opacity-5 fixed right-0 left-0'>
+    <div className='font-[FixelVariable] font-light py-6 z-50 mt-7 w-[90%] mx-auto rounded-full px-16 text-white bg-black shadow-custom-opacity backdrop-filter backdrop-blur-lg bg-opacity-5 fixed right-0 left-0'>
 
         <div className='flex font-semibold justify-between text-lg'>
             <div className='space-x-20'>

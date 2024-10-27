@@ -28,8 +28,23 @@ const HomePage = () => {
                 </div>
             </div>
         </div>
-        <div className='text-black'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, neque necessitatibus, aperiam quas laboriosam officiis tempore magni quae, eveniet unde minus deserunt pariatur expedita! Asperiores ducimus possimus ad ab necessitatibus.
+        <div className=''>
+           <div style={{'backgroundColor':'#2B2826'}} className='w-4/5 mx-auto my-10 py-16 px-20 rounded-xl'>
+                <h4 className='text-5xl font-[FixelVariable]'>What is <span className='font-[FixelBold]'>Pixel</span>Star</h4>
+                <p className='text-lg font-[FixelLight] mt-5'>PixelStar aims to provide users with a Pixel-like feel, as it should be, with enough tweaks of the experiences to differentiate with Pixel.</p>
+           </div>
+           <div className='my-10 flex space-x-10 justify-between w-4/5 mx-auto'>
+                {/* <div > */}
+                    <div className='w-4/5 mx-auto p-8 rounded-xl' style={{'backgroundColor':'#FFD3B7'}} >
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum voluptatem commodi non qui tempora debitis ducimus fugit earum fugiat quas consectetur rerum dolore animi odit, ullam architecto nisi, beatae nobis.
+                    </div>
+                {/* </div> */}
+                {/* <div > */}
+                    <div className='w-4/5 mx-auto p-8 rounded-xl' style={{'backgroundColor':'#D2DDFF'}}>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione magnam debitis ex tempora explicabo illum ullam suscipit, officia, unde quo mollitia asperiores adipisci necessitatibus voluptatem! Non nam ratione neque saepe?
+                    </div>
+                {/* </div> */}
+           </div>
         </div>
     </div>
   )
