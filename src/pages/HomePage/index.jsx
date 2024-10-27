@@ -2,6 +2,8 @@ import React from 'react'
 import phone1 from '../../assets/phone1.svg'
 import phone2 from '../../assets/phone2.svg'
 import ghlogo from '../../assets/ghlogo.svg'
+import telelogo2 from '../../assets/telelogo2.svg'
+import discussions from '../../assets/discussions.svg'
 
 const HomePage = () => {
   return (
@@ -30,20 +32,38 @@ const HomePage = () => {
         </div>
         <div className=''>
            <div style={{'backgroundColor':'#2B2826'}} className='w-4/5 mx-auto my-10 py-16 px-20 rounded-xl'>
-                <h4 className='text-5xl font-[FixelVariable]'>What is <span className='font-[FixelBold]'>Pixel</span>Star</h4>
-                <p className='text-lg font-[FixelLight] mt-5'>PixelStar aims to provide users with a Pixel-like feel, as it should be, with enough tweaks of the experiences to differentiate with Pixel.</p>
+                <h5 className='text-5xl font-[FixelVariable]'>What is <span className='font-[FixelBold]'>Pixel</span>Star</h5>
+                <h3 className='text-lg font-[FixelLight] mt-5'>PixelStar aims to provide users with a Pixel-like feel, as it should be, with enough tweaks of the experiences to differentiate with Pixel.</h3>
            </div>
            <div className='my-10 flex space-x-10 justify-between w-4/5 mx-auto'>
                 {/* <div > */}
-                    <div className='w-4/5 mx-auto p-8 rounded-xl' style={{'backgroundColor':'#FFD3B7'}} >
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum voluptatem commodi non qui tempora debitis ducimus fugit earum fugiat quas consectetur rerum dolore animi odit, ullam architecto nisi, beatae nobis.
+                    <div className='w-4/5 mx-auto p-8 rounded-xl' style={{'backgroundColor':'#FFD3B7','color':'#392E27'}} >
+                        <h4 className='text-4xl font-[FixelBold] px-8 py-5'>Pixel<span className='font-[FixelVariable]'>Star</span> <br /> <span className='text-6xl'>Uday</span></h4>
+                        <h3 className='text-lg px-8 font-[FixelLight]'>
+                        PixelStar Uday is the latest, most stable version of PixelStar that provides bunch customization with balanced amount of stability!
+                        </h3>
+                        <button className='px-8 mx-8 mt-4 rounded-full' style={{'backgroundColor':'#392E27', 'color':'#FFD3B7'}}>Learn More</button>
                     </div>
                 {/* </div> */}
                 {/* <div > */}
-                    <div className='w-4/5 mx-auto p-8 rounded-xl' style={{'backgroundColor':'#D2DDFF'}}>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione magnam debitis ex tempora explicabo illum ullam suscipit, officia, unde quo mollitia asperiores adipisci necessitatibus voluptatem! Non nam ratione neque saepe?
+                <div className='w-4/5 mx-auto p-8 rounded-xl' style={{'backgroundColor':'#D2DDFF','color':'#272B39'}} >
+                        <h4 className='text-4xl font-[FixelBold] px-8 py-5'>Pixel<span className='font-[FixelVariable]'>Star</span> <br /> <span className='text-6xl'>Pratah</span></h4>
+                        <h3 className='text-lg px-8 font-[FixelLight]'>
+                        PixelStar Pratah is the cutting edge version of PixelStar that provides enough customization based on latest Android release
+                        </h3>
+                        <button className='px-8 mx-8 mt-4 rounded-full' style={{'backgroundColor':'#272B39', 'color':'#D2DDFF'}}>Coming Soon</button>
                     </div>
                 {/* </div> */}
+           </div>
+           <div className='my-10 flex space-x-10  justify-between w-4/5 mx-auto'>
+            <div className=' p-8 flex space-x-6 rounded-xl w-4/5' style={{'backgroundColor':'#9EBDE1','color':'#2A2E32'}}>
+            <img className='ml-8' src={telelogo2} alt="" />
+                <h7 className='text-2xl my-auto font-[FixelBold]'>Telegram Channel</h7>
+            </div>
+            <div className=' p-8 flex space-x-6 rounded-xl w-4/5' style={{'backgroundColor':'#FFD89A','color':'#322C22'}}>
+            <img className='ml-8' src={discussions} alt="" />
+                <h7 className='text-2xl my-auto font-[FixelBold]'>Discussion & Support</h7>
+            </div>
            </div>
         </div>
     </div>
