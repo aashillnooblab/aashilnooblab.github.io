@@ -4,6 +4,7 @@ import phone2 from '../../assets/phone2.svg'
 import ghlogo from '../../assets/ghlogo.svg'
 import telelogo2 from '../../assets/telelogo2.svg'
 import discussions from '../../assets/discussions.svg'
+import phone from '../../assets/phone.png'
 
 const HomePage = () => {
   return (
@@ -25,8 +26,8 @@ const HomePage = () => {
                     </div>
                 </div>
                 <div className='flex'>
-                    <img className='h-[75%] absolute bottom-0 z-40' src={phone1} alt="" />
-                    <img className='h-[48%] absolute bottom-0 right-28' src={phone2} alt="" />
+                    {/* <img src="" alt="" /> */}
+                    <img className='h-[75%] absolute bottom-0 z-40' src={phone} alt="" />
                 </div>
             </div>
         </div>
