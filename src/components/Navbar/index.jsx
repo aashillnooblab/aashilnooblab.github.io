@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import ghlogo from '../../assets/ghlogo.svg'
 import telelogo from '../../assets/telelogo.svg'
+import pslogo from '../../assets/pslogo.svg'
 
 const Navbar = () => {
   return (
@@ -9,9 +10,9 @@ const Navbar = () => {
 
         <div className='flex font-semibold justify-between text-lg'>
             <div className='space-x-20'>
-                <Link to={'/'}>home</Link>
-                <Link to={'/downloads'}>downloads</Link>
-                <Link to={'/about'}>about</Link>
+                <Link to={'/'}>Home</Link>
+                <Link to={'/downloads'}>Downloads</Link>
+                <Link to={'/about'}>About</Link>
             </div>
             <div className='flex gap-8'>
             <img src={ghlogo} alt="github" />
