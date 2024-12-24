@@ -1,18 +1,24 @@
-import React from 'react';
-import phone1 from '../../assets/phone1.svg';
-import phone2 from '../../assets/phone2.svg';
-import ghlogo from '../../assets/ghlogo.svg';
-import telelogo from '../../assets/telelogo.svg';
-import { Navigate, useNavigate } from 'react-router-dom';
-import telelogo2 from '../../assets/telelogo2.svg';
-import discussions from '../../assets/discussions.svg';
-import phone from '../../assets/phone.png';
+import React from "react";
+import ghlogo from "../../assets/ghlogo.svg";
+import telelogo from "../../assets/telelogo.svg";
+import { useNavigate } from "react-router-dom";
+import telelogo2 from "../../assets/telelogo2.svg";
+import discussions from "../../assets/discussions.svg";
+import phone from "../../assets/phone.png";
 
 const HomePage = () => {
   const navigate = useNavigate();
 
   const handleDownloadNavigation = () => {
-    navigate('/downloads')
+    navigate("/downloads");
+  };
+
+  const handleGithubNavigation = () => {
+    window.location.href = "http://github.com/Project-PixelStar"
+  }
+
+  const handleTelegramNavigation = () => {
+    window.location.href = "https://t.me/pixelstarchannel";
   }
 
   return (
@@ -22,21 +28,43 @@ const HomePage = () => {
         <div className="grid grid-cols-1 gap-0 md:grid-cols-2 h-screen">
           <div className="mx-auto my-auto text-center md:text-left px-4 sm:px-6 md:px-0">
             <h1 className="text-6xl sm:text-5xl md:text-7xl lg:text-7xl xl:text-8xl opacity-70">
-              <span className="text-[rgb(211,219,242)] font-[FixelBold]">Pixel</span>
-              <span className="text-[rgb(211,219,242)] font-[FixelRegular]">Star</span>
+              <span className="text-[rgb(211,219,242)] font-[FixelBold]">
+                Pixel
+              </span>
+              <span className="text-[rgb(211,219,242)] font-[FixelRegular]">
+                Star
+              </span>
             </h1>
             <p className="w-4/5 mx-auto md:mx-0 text-lg sm:text-xl opacity-70 font-[FixelLight] mt-4">
               An android-based open source operating system for various devices.
             </p>
             <div className="flex flex-row sm:flex-row justify-center md:justify-start w-4/5 mx-auto md:mx-0 my-5 font-[FixelRegular] gap-5">
-                <button className="bg-white opacity-70 px-12 sm:px-16 text-black rounded-full py-3 text-base sm:text-lg" onClick={handleDownloadNavigation}>
+              <button
+                className="bg-white opacity-70 px-12 sm:px-16 text-black rounded-full py-3 text-base sm:text-lg 
+                hover:scale-110 hover:opacity-90 hover:shadow-xl 
+                transition-transform duration-500 ease-in-out
+                "
+                onClick={handleDownloadNavigation}
+              >
                 Download
               </button>
-              <button className="text-black opacity-70 rounded-full">
+              <button
+                className="text-black opacity-70 rounded-full hover:scale-110 hover:opacity-90 hover:shadow-xl 
+                transition-transform duration-500 ease-in-out"
+                onClick={handleGithubNavigation}
+              >
                 <img className="w-10 sm:w-12" src={ghlogo} alt="GitHub Logo" />
               </button>
-              <button className="text-black bg-transparent opacity-70 rounded-full">
-                <img className="w-10 sm:w-12" src={telelogo} alt="Telegram logo" />
+              <button
+                className="text-black bg-transparent opacity-70 rounded-full hover:scale-110    hover:opacity-90 hover:shadow-xl 
+                transition-transform duration-500 ease-in-out"
+                onClick={handleTelegramNavigation}
+              >
+                <img
+                  className="w-10 sm:w-12"
+                  src={telelogo}
+                  alt="Telegram logo"
+                />
               </button>
             </div>
           </div>
@@ -57,8 +85,7 @@ const HomePage = () => {
         </h5>
         <p className="text-base sm:text-lg font-[FixelLight] mt-5">
           PixelStar aims to provide users with a Pixel-like feel, as it should
-          be, with enough tweaks of the experiences to differentiate with
-          Pixel.
+          be, with enough tweaks of the experiences to differentiate with Pixel.
         </p>
       </div>
 
@@ -75,7 +102,7 @@ const HomePage = () => {
             provides a bunch of customization with a balanced amount of
             stability!
           </p>
-          <button className="px-6 sm:px-8 mt-4 rounded-full bg-[#392E27] text-[#FFD3B7]">
+          <button onClick={() => window.open("https://t.me/pixelstarchannel", '_blank')} className="px-6 py-2 sm:px-8 mt-4 rounded-full bg-[#392E27] text-[#FFD3B7]">
             Learn More
           </button>
         </div>
@@ -83,28 +110,36 @@ const HomePage = () => {
           <h4 className="text-2xl sm:text-3xl md:text-4xl font-[FixelBold]">
             Pixel<span className="font-[FixelVariable]">Star</span>
             <br />
-            <span className="text-4xl sm:text-5xl md:text-6xl">Pratah</span>
+            <span className="text-4xl sm:text-5xl md:text-6xl">Madhyan</span>
           </h4>
           <p className="text-sm sm:text-base md:text-lg font-[FixelLight] mt-4">
-            PixelStar Pratah is the cutting-edge version of PixelStar that
+            PixelStar Madhyan is the cutting-edge version of PixelStar that
             provides enough customization based on the latest Android release.
           </p>
-          <button className="px-6 sm:px-8 mt-4 rounded-full bg-[#272B39] text-[#D2DDFF]">
+          <button className="px-6 py-2 sm:px-8 mt-4 rounded-full bg-[#272B39] text-[#D2DDFF]">
             Coming Soon
           </button>
         </div>
       </div>
 
       {/* Support Links */}
-      <div className="my-5 flex flex-col sm:flex-row gap-6 justify-center sm:justify-between w-11/12 sm:w-4/5 mx-auto">
-        <div className="p-6 sm:p-8 flex space-x-4 sm:space-x-6 rounded-xl w-full sm:w-[48%] bg-[#9EBDE1] text-[#2A2E32]">
-          <img className="w-10 sm:w-12" src={telelogo2} alt="Telegram Channel" />
+      <div className="my-5 flex flex-col sm:flex-row gap-6 justify-center sm:justify-between w-11/12 sm:w-4/5 mx-auto ">
+        <div onClick={() => window.open("https://t.me/pixelstarchannel", '_blank')} className="p-6 sm:p-8 flex cursor-pointer space-x-4 sm:space-x-6 rounded-xl w-full sm:w-[48%] bg-[#9EBDE1] text-[#2A2E32]">
+          <img
+            className="w-10 sm:w-12"
+            src={telelogo2}
+            alt="Telegram Channel"
+          />
           <p className="text-lg sm:text-2xl font-[FixelBold] my-auto">
             Telegram Channel
           </p>
         </div>
-        <div className="p-6 sm:p-8 flex space-x-4 sm:space-x-6 rounded-xl w-full sm:w-[48%] bg-[#FFD89A] text-[#322C22]">
-          <img className="w-10 sm:w-12" src={discussions} alt="Discussions & Support" />
+        <div onClick={() => window.open("https://t.me/Project_PixelStar", '_blank')} className="p-6 sm:p-8 flex space-x-4 cursor-pointer sm:space-x-6 rounded-xl w-full sm:w-[48%] bg-[#FFD89A] text-[#322C22]">
+          <img
+            className="w-10 sm:w-12"
+            src={discussions}
+            alt="Discussions & Support"
+          />
           <p className="text-lg sm:text-2xl font-[FixelBold] my-auto">
             Discussion & Support
           </p>
@@ -115,3 +150,4 @@ const HomePage = () => {
 };
 
 export default HomePage;
+
