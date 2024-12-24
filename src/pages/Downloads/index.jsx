@@ -98,7 +98,7 @@ const Downloads = () => {
   return (
     <div>
       <div className='min-h-screen bg-custom-radial'>
-        <div className='grid pt-40 pb-40 font-[FixelLight] w-4/5 mx-auto grid-cols-3'>
+        <div className='grid pt-40 pb-40 font-[FixelLight] w-4/5 mx-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-3 '>
 
           {deviceList && !loading && (
             devices.map((device,index)=>(
