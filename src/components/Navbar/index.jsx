@@ -19,6 +19,7 @@ const Navbar = () => {
             <Link to={'/'}>Home</Link>
             <Link to={'/downloads'}>Downloads</Link>
             <Link to={'/about'}>About</Link>
+            <Link to={'/team'}>Team</Link>
             <a href="https://blog.project-pixelstar.xyz">Blog</a>
           </div>
 
@@ -62,6 +63,7 @@ const Navbar = () => {
             <Link to={'/'} onClick={toggleMenu} className="block font-[FixelVariable]">Home</Link>
             <Link to={'/downloads'} onClick={toggleMenu} className="block font-[FixelVariable]">Downloads</Link>
             <Link to={'/about'} onClick={toggleMenu} className="block font-[FixelVariable]">About</Link>
+            <Link to={'/team'} onClick={toggleMenu} className="block font-[FixelVariable]">Team</Link>
             <a href='https://blog.project-pixelstar.xyz' onClick={toggleMenu} className='block font-[FixelVariable]'>Blog</a>
           </div>
           <div className="flex gap-8 mt-12">

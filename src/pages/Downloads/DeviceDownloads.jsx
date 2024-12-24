@@ -43,8 +43,8 @@ const DeviceDownloads = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white p-4 sm:p-8 flex items-center justify-center">
-      <div className="mt-28 max-w-6xl w-full bg-gray-800 bg-opacity-50 p-6 rounded-xl shadow-lg flex flex-col lg:flex-row">
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white p-10 sm:p-8 flex items-center justify-center">
+      <div className="mt-28 max-w-6xl w-full bg-gray-800 bg-opacity-50 p-14 rounded-xl shadow-lg flex flex-col lg:flex-row">
         <div className="lg:w-1/3 mb-6 lg:mb-0 flex justify-center">
           <img
             src={`https://github.com/Project-PixelStar/official_devices/blob/14/images/${codename}.png?raw=true`}

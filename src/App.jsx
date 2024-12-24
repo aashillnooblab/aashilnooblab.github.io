@@ -6,6 +6,7 @@ import NotFound from "./pages/NotFound";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import DeviceDownloads from "./pages/Downloads/DeviceDownloads"
+import Team from "./pages/Team";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/about" element={<About/>} />
           <Route path="*" element={<NotFound/>} />
           <Route path="/downloads/:codename" element={<DeviceDownloads/> } />
+          <Route path="/team" element={<Team />} />
         </Routes>
         <Footer/>
       </BrowserRouter>
