@@ -24,8 +24,8 @@ const Navbar = () => {
 
           {/* Social Icons */}
           <div className="hidden md:flex gap-8">
-            <img src={ghlogo} alt="GitHub" className="w-6 h-6" />
-            <img src={telelogo} alt="Telegram" className="w-6 h-6" />
+            <img onClick={() => window.open("https://github.com/Project-PixelStar", '_blank')}  src={ghlogo} alt="GitHub" className="w-6 h-6 cursor-pointer" />
+            <img onClick={() => window.open("https://t.me/pixelstarchannel", '_blank')} src={telelogo} alt="Telegram" className="w-6 h-6 cursor-pointer" />
           </div>
 
           {/* Logo */}

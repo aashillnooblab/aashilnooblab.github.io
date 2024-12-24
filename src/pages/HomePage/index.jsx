@@ -102,7 +102,7 @@ const HomePage = () => {
             provides a bunch of customization with a balanced amount of
             stability!
           </p>
-          <button onClick={() => window.open("https://t.me/pixelstarchannel", '_blank')} className="px-6 py-2 sm:px-8 mt-4 rounded-full bg-[#392E27] text-[#FFD3B7]">
+          <button onClick={() => window.location.href=""} className="px-6 py-2 sm:px-8 mt-4 rounded-full bg-[#392E27] text-[#FFD3B7]">
             Learn More
           </button>
         </div>
@@ -150,4 +150,3 @@ const HomePage = () => {
 };
 
 export default HomePage;
-
