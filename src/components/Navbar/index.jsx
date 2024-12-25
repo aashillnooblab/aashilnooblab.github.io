@@ -15,7 +15,7 @@ const Navbar = () => {
       <nav className="font-[FixelVariable] mt-5 font-light py-4 z-50 w-[90%] mx-auto rounded-full px-6 md:px-16 text-white bg-black shadow-custom-opacity backdrop-filter backdrop-blur-lg bg-opacity-5 fixed right-0 left-0">
         <div className="flex justify-end md:justify-between items-center">
           {/* Links for Desktop */}
-          <div className="hidden md:flex justify-between text-lg font-semibold space-x-20">
+          <div className="hidden md:flex justify-baryan-shandilyas-projects-4b241611/psetween text-lg font-semibold space-x-20">
             <Link to={'/'}>Home</Link>
             <Link to={'/downloads'}>Downloads</Link>
             <Link to={'/about'}>About</Link>

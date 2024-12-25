@@ -25,7 +25,7 @@ const Footer = () => {
             Designed By naoto
           </div>
           <div className='text-center md:text-right'>
-            Developed By Prathamk07, Semispeol & <a href="https://github.com/shandilyaaryan" className='hover:underline'>Aryan Shandilya</a> 
+            Developed By Prathamk07 & <a href="https://github.com/shandilyaaryan" className='hover:underline'>Aryan Shandilya</a> 
           </div>
         </div>
       </div>
