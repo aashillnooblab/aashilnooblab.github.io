@@ -78,14 +78,6 @@ const DeviceDownloads = () => {
                 Forum Link
               </ActionButton>
             )}
-            {deviceDetails.telegram && (
-              <ActionButton
-                href={deviceDetails.telegram}
-                className="bg-purple-600 hover:bg-purple-700"
-              >
-                Telegram Support
-              </ActionButton>
-            )}
           </div>
         </div>
       </div>
