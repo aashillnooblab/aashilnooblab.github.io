@@ -22,7 +22,7 @@ const Footer = () => {
       <div className='w-11/12 md:w-4/5 mx-auto pb-6 md:pb-2 text-xs sm:text-sm font-[FixelVariable] text-white'>
         <div className='flex flex-col md:flex-row justify-between items-center md:items-start space-y-2 md:space-y-0'>
           <div className='text-center md:text-left'>
-            Designed By naoto
+            Designed By naotoshoto
           </div>
           <div className='text-center md:text-right'>
             Developed By Prathamk07 & <a href="https://github.com/shandilyaaryan" className='hover:underline'>Aryan Shandilya</a> 
