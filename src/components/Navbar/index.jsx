@@ -20,7 +20,7 @@ const Navbar = () => {
             <Link to={'/downloads'}>Downloads</Link>
             <Link to={'/about'}>About</Link>
             <Link to={'/team'}>Team</Link>
-            <a href="https://blog.project-pixelstar.xyz">Blog</a>
+            <Link to={'/blog'}>Blog</Link>
           </div>
 
           {/* Social Icons */}
@@ -64,7 +64,7 @@ const Navbar = () => {
             <Link to={'/downloads'} onClick={toggleMenu} className="block font-[FixelVariable]">Downloads</Link>
             <Link to={'/about'} onClick={toggleMenu} className="block font-[FixelVariable]">About</Link>
             <Link to={'/team'} onClick={toggleMenu} className="block font-[FixelVariable]">Team</Link>
-            <a href='https://blog.project-pixelstar.xyz' onClick={toggleMenu} className='block font-[FixelVariable]'>Blog</a>
+            <Link to={'/blog'} onClick={toggleMenu} className='block font-[FixelVariable]'>Blog</Link>
           </div>
           <div className="flex gap-8 mt-12">
             <img src={ghlogo} alt="GitHub" className="w-8 h-8" />
