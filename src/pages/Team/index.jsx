@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { Loader } from "lucide-react";
+import telelogo from "../../assets/telelogo.svg";
+import ghlogo from "../../assets/ghlogo.svg";
 
 const Team = () => {
   const [team, setTeam] = useState([]);
@@ -11,16 +14,17 @@ const Team = () => {
       try {
         const response = await fetch(url);
         const data = await response.json();
-        
-        // Fetch GitHub profile pictures for each team member
+
         const updatedTeam = await Promise.all(
           data.team.map(async (member) => {
             if (member.socials.github) {
-              const githubResponse = await fetch(`https://api.github.com/users/${member.socials.github}`);
+              const githubResponse = await fetch(
+                `https://api.github.com/users/${member.socials.github}`
+              );
               const githubData = await githubResponse.json();
               return {
                 ...member,
-                avatarUrl: githubData.avatar_url, // GitHub profile picture URL
+                avatarUrl: githubData.avatar_url,
               };
             }
             return member;
@@ -39,7 +43,11 @@ const Team = () => {
   }, []);
 
   if (loading) {
-    return <p className="text-white text-center">Loading team members...</p>;
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+        <Loader className="w-16 h-16 animate-spin text-white" />
+      </div>
+    );
   }
 
   return (
@@ -60,20 +68,23 @@ const Team = () => {
                     className="w-24 h-24 rounded-full object-cover"
                   />
                 ) : (
-                  <div className="w-24 h-24 rounded-full bg-gray-500"></div> // Fallback if no avatar URL
+                  <div className="w-24 h-24 rounded-full bg-gray-500"></div>
                 )}
               </div>
               <h3 className="text-2xl font-bold mt-4">{member.name}</h3>
               <p className="text-lg text-slate-300">{member.role}</p>
-              <div className="mt-4 space-y-2">
+              <div className="mt-4 flex justify-center gap-4">
                 {member.socials.github && (
                   <a
                     href={`https://github.com/${member.socials.github}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-500 hover:text-blue-700"
                   >
-                    GitHub
+                    <img
+                      src={ghlogo}
+                      alt="GitHub"
+                      className="w-6 h-6 aspect-square object-contain hover:scale-110"
+                    />
                   </a>
                 )}
                 {member.socials.telegram && (
@@ -81,19 +92,12 @@ const Team = () => {
                     href={`https://t.me/${member.socials.telegram}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-400 hover:text-blue-600"
                   >
-                    Telegram
-                  </a>
-                )}
-                {member.socials.xda && member.socials.xda !== "" && (
-                  <a
-                    href={`https://forum.xda-developers.com/member/${member.socials.xda}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-green-500 hover:text-green-700"
-                  >
-                    XDA
+                    <img
+                      src={telelogo}
+                      alt="Telegram"
+                      className="w-6 h-6 aspect-square object-contain hover:scale-110"
+                    />
                   </a>
                 )}
               </div>
