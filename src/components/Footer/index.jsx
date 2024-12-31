@@ -14,7 +14,7 @@ const Footer = () => {
           </div>
           <div className='text-center md:text-right'>
             <h6 className='text-base sm:text-lg md:text-xl font-[FixelBold] my-4 md:my-10'>
-              © 2024
+              © 2024-2025
             </h6>
           </div>
         </div>
